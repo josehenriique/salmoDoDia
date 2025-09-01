@@ -1,7 +1,7 @@
 const diaData = document.querySelector(".dia-data")
 const verse = document.querySelector(".versiculo")
 const reference = document.querySelector(".referencia")
-const API_URL = "http://localhost:3000/message"
+const API_URL = "/api/message"
 
 const today = new Date().toLocaleDateString("pt-br")
 
