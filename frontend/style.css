@@ -13,6 +13,10 @@
   box-sizing: border-box;
 }
 
+a{
+  text-decoration: none;
+}
+
 body{
   width: 100vw;
   height: 100vh;
@@ -23,6 +27,8 @@ body{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+
+  overflow: hidden;
 }
 
 body::after{
@@ -37,6 +43,11 @@ body::after{
   background-position: center;
 
   z-index: -2;
+}
+
+.mensagem-do-dia{
+  width: 80%;
+  max-width: 400px;
 }
 
 .content{
@@ -109,7 +120,7 @@ footer{
 }
 
 .logo-realize{
-  width: 8.8rem;
+  width: 9rem;
 }
 
 .redes-sociais{
@@ -134,5 +145,16 @@ footer{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: .5rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .redes-sociais{
+    flex-direction: column;
+  }
+
+  .barra{
+    display: none;
   }
 }
