@@ -1,4 +1,5 @@
 const diaData = document.querySelector(".dia-data")
+const main = document.querySelector("main")
 const verse = document.querySelector(".versiculo")
 const reference = document.querySelector(".referencia")
 const API_URL = "/api/message"
@@ -19,3 +20,9 @@ async function getMessage(){
 }
 
 getMessage()
+
+// Redirecionar ao instagram quando clicar na tela
+
+main.addEventListener('click', () => {
+  window.open("https://instagram.com/atelieeestampariarealize", "_blank")
+})
